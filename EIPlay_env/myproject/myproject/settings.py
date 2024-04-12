@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os  #IMPORTO os , NECESARIO PARA: leer o escribir archivos, manipular rutas de archivos, trabajar con variables de entorno, entre otras.
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'], #ESPECIFICO DE DÓNDE COGE LOS templates COMO EL index.html
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

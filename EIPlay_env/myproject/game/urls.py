@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.home, name = 'home')
+    path('', views.home, name = 'home')
 ]
 #urlpatters: Define una lista llamada urlpatterns, que es una lista de todas las rutas URL disponibles
 # en esta aplicación (la principal, la...)
