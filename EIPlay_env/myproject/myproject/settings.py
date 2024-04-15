@@ -9,11 +9,8 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-<<<<<<< HEAD
-import os #NECESARIO PARA LEER O ESCRIBIR ARCHIVOS, MANIPULAR RUTAS DE ARCHIVOS, TRABAJAR CON VARIABLES DE ENTORNO, ENTRE OTRAS
-=======
+
 import os  #IMPORTO os , NECESARIO PARA: leer o escribir archivos, manipular rutas de archivos, trabajar con variables de entorno, entre otras.
->>>>>>> 3e03dd717eec23df6d2c07d1a9515f29fbaccffe
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,11 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'game' #AÑADIMOS EL NOMBRE DE MI APP WEB , game
-=======
-    'game'
->>>>>>> 3e03dd717eec23df6d2c07d1a9515f29fbaccffe
 ]
 
 MIDDLEWARE = [
@@ -63,11 +56,10 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
+#<<<<<<< HEAD
         'DIRS': [BASE_DIR / 'templates'], #ESPECIFICO DE DÓNDE COGE LOS TEMPLATES, COMO EL index.html PARA QUE SE VISUALICE
-=======
-        'DIRS': [BASE_DIR / 'templates'], #ESPECIFICO DE DÓNDE COGE LOS templates COMO EL index.html
->>>>>>> 3e03dd717eec23df6d2c07d1a9515f29fbaccffe
+#=======
+#>>>>>>> 3e03dd717eec23df6d2c07d1a9515f29fbaccffe
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
