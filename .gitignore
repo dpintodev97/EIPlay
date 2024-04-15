@@ -1,4 +1,5 @@
 EIPlay_env/myproject/db.sqlite3
 .idea/
 Lib/
-pyvenv.cfg
+pyvenv.cfg/
+__pycache__
