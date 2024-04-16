@@ -30,7 +30,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+#contiene los nombres de todas las aplicaciones Django que están activadas en esta instancia de Django.
+# Las aplicaciones se pueden usar en diversos proyectos y usted puede empaquetar
+# y distribuirlas para que otras personas las puedan utilizar en sus proyectos.
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -80,7 +82,7 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
@@ -110,7 +112,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Madrid' #CAMBIO TIME ZONE A MADRID ; OJO, A FUTURO, SI QUEREMOS QUE LA APP SEA VISIBLE EN OTROS PC,
+                # EL SERVER DE LA APP DEBE ESTR CONFIGURADO SU TIM ZONE IGUAL
 
 USE_I18N = True
 
