@@ -125,6 +125,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Ruta del directorio donde se almacenarán los archivos estáticos
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+STATIC_ROOT = 'C:\sw\EIPlay\EIPlay_env\myproject\static_root'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
