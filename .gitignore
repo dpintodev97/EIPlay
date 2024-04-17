@@ -3,3 +3,5 @@ EIPlay_env/myproject/db.sqlite3
 Lib/
 Scripts/
 pyvenv.cfg
+__pycache__/
+*.pyc
