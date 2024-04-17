@@ -82,8 +82,13 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql', #cambio el motor de bbdd a mysql (hice antes : pip install mysqlcliente)
+        #CONFIGURAMOS DETALLES DE LA CONEXION:
+        'NAME': 'eiplay_bbdd',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST':'localhost',
+        'PORT': '3306',
     }
 }
 
