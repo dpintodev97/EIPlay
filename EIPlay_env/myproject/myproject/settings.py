@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'game' #AÑADIMOS EL NOMBRE DE MI APP WEB , game
+    'game' #AÑADIMOS EL NOMBRE DE MI APP WEB , game; QUE ES LA PAGINA PRINCIPAL DE LA APP
 ]
 
 MIDDLEWARE = [

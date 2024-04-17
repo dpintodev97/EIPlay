@@ -9,4 +9,11 @@ from django.shortcuts import render, redirect
 def home(request):
     #return HttpResponse('holi')
    return render(request, 'index.html')
+#FUNCION QUE ANTE LA SOLICITUD, RETORNA EL index.html, QUE ES LA PAGINA PRINCIPAL DE LA APP
+
+#NOTA: NECESITAMOS OTRAS RESPUESTAS A OTRAS SOLICTUDES, SEGUN EL USUARIO NAVEGUE POR LA WEB
+
+def contenido(request):
+    return render(request, 'contenido.html')
+#RETORNO, REMITA AL USER A LA PAGINA DE PREGUNTAS, DONDE PODRÁ RESOLVERLAS
 
