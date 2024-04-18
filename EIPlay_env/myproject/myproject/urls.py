@@ -19,8 +19,10 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     #NECESITAMOS incluir la url de la app en sí, de game:
     #path('game/', include('game.urls')),
     path('', include('game.urls')),
+    path('', include('registro.urls'))
 
 ]

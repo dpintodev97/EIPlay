@@ -17,3 +17,11 @@ def contenido(request):
     return render(request, 'contenido.html')
 #RETORNO, REMITA AL USER A LA PAGINA DE PREGUNTAS, DONDE PODRÁ RESOLVERLAS
 
+def contenido(request):
+    return render(request, 'contenido.html')
+#URL QUE LLEVE AL HTML DINÁMICO, DONDE CON UN SOLO HTML, VAYA CARGÁNDOSE LAS PREGUNTAS ALMACENADAS EN LA BBDD
+
+def registro(request):
+    return render(request)
+
+

@@ -31,17 +31,19 @@ ALLOWED_HOSTS = []
 
 # Application definition
 #contiene los nombres de todas las aplicaciones Django que están activadas en esta instancia de Django.
-# Las aplicaciones se pueden usar en diversos proyectos y usted puede empaquetar
-# y distribuirlas para que otras personas las puedan utilizar en sus proyectos.
+# Las aplicaciones se pueden usar en diversos proyectos y se pueden empaquetar y distribuirlas para que otras personas las puedan utilizar en sus proyectos.
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'game' #AÑADIMOS EL NOMBRE DE MI APP WEB , game; QUE ES LA PAGINA PRINCIPAL DE LA APP
+    'django.contrib.admin', #Crea un panel de administración web para gestionar los datos del sitio.
+    'django.contrib.auth', #Proporciona funciones para la autenticación de usuarios, incluyendo registro, inicio de sesión, etc.
+    'django.contrib.contenttypes',  #Permite la creación de modelos de datos genéricos y su relación entre sí.
+    'django.contrib.sessions', #Administra las sesiones de usuario para mantener la información entre diferentes solicitudes HTTP.
+    'django.contrib.messages', #Envía mensajes temporales entre vistas y plantillas, como mensajes de éxito o error.
+    'django.contrib.staticfiles', #Gestiona y sirve archivos estáticos como CSS, JavaScript e imágenes durante el desarrollo y despliegue del proyecto.
+    'game' #AÑADIMOS EL NOMBRE DE MI APP WEB , game
+
 ]
+#nota: ahí en ese array de apps, se guardan las apps del proyecto Django. Por defecto, vienen esas,
+#las cuales crearan tablas en la BBDD MySQL cuando haga las migraciones. Si no quiero alguna, las comento
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
