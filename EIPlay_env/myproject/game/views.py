@@ -10,3 +10,11 @@ def home(request):
     #return HttpResponse('holi')
    return render(request, 'index.html')
 
+def contenido(request):
+    return render(request, 'contenido.html')
+#URL QUE LLEVE AL HTML DINÁMICO, DONDE CON UN SOLO HTML, VAYA CARGÁNDOSE LAS PREGUNTAS ALMACENADAS EN LA BBDD
+
+def registro(request):
+    return render(request)
+
+

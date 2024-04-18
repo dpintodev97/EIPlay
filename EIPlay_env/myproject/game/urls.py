@@ -5,7 +5,7 @@ urlpatterns = [
     path('', views.home, name = 'home')
 ]
 #urlpatters: Define una lista llamada urlpatterns, que es una lista de todas las rutas URL disponibles
-# en esta aplicación (la principal, la...)
+# en esta aplicación (la principal, la que lleva al contenido con preguntas.........)
 
 #esta configuración establece que cuando un usuario accede a la ruta URL raíz de la aplicación
 # (es decir, http://tudominio.com/), Django llamará a la función de vista home para manejar la solicitud.
