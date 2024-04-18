@@ -19,10 +19,10 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('game.urls')), # Esta línea redirige (por defecto, raiz) a la página de registro
 
-    #NECESITAMOS incluir la url de la app en sí, de game:
-    #path('game/', include('game.urls')),
-    path('', include('game.urls')),
-    path('', include('registro.urls'))
-
+   #En esta url del proeycto, especificamos que solo busque la lista de urls de la app game: game\urls.py
 ]
+
+
+

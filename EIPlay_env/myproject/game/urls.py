@@ -2,7 +2,15 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home, name = 'home')
+    #path('registro/', views.registro, name='registro'),
+    path('', views.registro, name='registro'),
+    path('game/', views.home, name = 'home')
+    # Otras URLs de la aplicación game...
+
+#Con esta configuración, cuando un usuario visite la raíz del sitio, será redirigido a la página de registro/inicio de sesión.
+# Y cuando accedan a /game/, se mostrará la página del juego.
+
+
 ]
 #urlpatters: Define una lista llamada urlpatterns, que es una lista de todas las rutas URL disponibles
 # en esta aplicación (la principal, la que lleva al contenido con preguntas.........)
